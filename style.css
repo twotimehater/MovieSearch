@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: geist mono;
+    background: #B96617;
+    color: #FFC288;
+    text-align: center;
+}
+span {
+color:#FFC288
+}
+.logo {
+position: absolute;
+  opacity: 0.4; 
+width:70px;
+left:500px
+}
+header {
+    background: #DD8734;
+    padding: 25px;
+    border-bottom: 4px solid #934903;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #FFC288;
+    text-decoration:underline;
+}
+h4 {
+    margin: 0;
+    color: #F3A55B;
+    font-size: 18px;
+}
+
+h4 span {
+    color: #FFC288;
+}
+
+main {
+    min-height: 600px;
+    padding: 40px 20px;
+    background: #B96617;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-btn {
+    background: #DD4434;
+    color: #FFC288;
+    border: 2px solid #934903;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background: #c93628;
+    transform: scale(1.05);
+}
+
+.search-btn:active {
+    transform: scale(0.98);
+}
+
+.film-placeholder {
+    width: 300px;
+    min-height: 420px;
+    margin: 35px auto;
+    background: #DD8734;
+    border: 2px solid #934903;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFC288;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.film-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img1,
+.img2 {
+    position: absolute;
+    width: 180px;
+    border-radius: 15px;
+    border: 4px solid #934903;
+    box-shadow: 0 0 10px #934903;
+    opacity: 1;
+}
+
+.img1 {
+    left: 30px;
+    top: 150px;
+    transform: rotate(-8deg);
+}
+
+.img2 {
+    right: 30px;
+    top: 150px;
+    transform: rotate(8deg);
+}
+
+footer {
+    background: #DD8734;
+    border-top: 4px solid #934903;
+    padding: 25px;
+}
+
+footer h3 {
+font-size:25px;
+color:#B96617;
+}
+
+footer a {
+text-decoration:none;
+color:#B92617
+
+}
+footer a:hover {
+color:#DD4434;
+transform: scale(1.05);
+transition:0.2s;
+cursor:pointer;
+}
+
+footer a:active {
+transform: scale(0.98);
+};
