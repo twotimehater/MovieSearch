@@ -4,27 +4,36 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: geist mono;
     background: #B96617;
     color: #FFC288;
     text-align: center;
 }
-
+span {
+color:#FFC288
+}
+.logo {
+position: absolute;
+  opacity: 0.4; 
+width:70px;
+left:500px
+}
 header {
     background: #DD8734;
     padding: 25px;
-    border-bottom: 2px solid #934903;
+    border-bottom: 4px solid #934903;
 }
 
 h2 {
     margin: 0;
-    font-size: 32px;
+    font-size: 40px;
     color: #FFC288;
+    text-decoration:underline;
 }
-
 h4 {
     margin: 0;
-    color: #FFC288;
+    color: #F3A55B;
+    font-size: 18px;
 }
 
 h4 span {
@@ -105,11 +114,27 @@ main {
 
 footer {
     background: #DD8734;
-    border-top: 2px solid #934903;
+    border-top: 4px solid #934903;
     padding: 25px;
 }
 
-footer h4 {
-    margin: 0;
-    color: #FFC288;
+footer h3 {
+font-size:25px;
+color:#B96617;
 }
+
+footer a {
+text-decoration:none;
+color:#B92617
+
+}
+footer a:hover {
+color:#DD4434;
+transform: scale(1.05);
+transition:0.2s;
+cursor:pointer;
+}
+
+footer a:active {
+transform: scale(0.98);
+};
