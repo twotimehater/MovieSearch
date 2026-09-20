@@ -1,4 +1,4 @@
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     const placeholder = document.querySelector('.film-placeholder');
     const searchBtn = document.querySelector('.search-btn');
@@ -18,3 +18,4 @@
     searchBtn.addEventListener('click', () => {
         FetchMovie();
     });
+});
