@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
         placeholder.innerHTML = `<img src="${MovieUrl}" alt="Movie Image">`;
-        yearHolder.innerHTML = `<h3> Рік: ${YearUrl} </h3>`
-        title.innerHTML = `<h3> Назва: ${NameUrl} </h3>`
+        yearHolder.innerHTML = `<h3> Рік: <span>${YearUrl}</span> </h3>`
+        title.innerHTML = `<h3> Назва:<br> <span> ${NameUrl}</span> </h3>`
     }
 
     searchBtn.addEventListener('click', () => {
