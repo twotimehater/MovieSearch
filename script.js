@@ -5,10 +5,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearHolder = document.querySelector('.year')
     const title = document.querySelector('.title')
     
-
+    const searches = [
+    "avengers",
+    "batman",
+    "superman",
+    "spiderman",
+    "matrix",
+    "star wars",
+    "harry potter",
+    "terminator",
+    "inception",
+    "joker",
+    "god of war",
+    "simpsons",
+    "rick and morty"
+    ];
+    
+    const randomSearch =
+    searches[Math.floor(Math.random() * searches.length)];
     async function FetchMovie() {
         const MovieImage = await fetch(
-            'https://www.omdbapi.com/?apikey=578aed68&s=avengers&page=3&r=json'
+            `https://www.omdbapi.com/?apikey=578aed68&s=${randomSearch}&page=1&r=json`
         );
 
         let data = await MovieImage.json();
@@ -18,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const YearUrl = data.Search[1].Year;
 
         
-        placeholder.innerHTML = `<img src="${MovieUrl}" alt="Movie Image">`;
+        placeholder.innerHTML = `<img src="${MovieUrl}" alt="Помилка завантаження зображення" />`;
         yearHolder.innerHTML = `<h3> Рік: <span>${YearUrl}</span> </h3>`
         title.innerHTML = `<h3> Назва:<br> <span> ${NameUrl}</span> </h3>`
     }
